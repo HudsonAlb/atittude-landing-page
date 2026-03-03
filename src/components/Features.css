@@ -1,0 +1,42 @@
+.grid-features {
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.feature-card {
+    background-color: var(--bg-card);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+}
+
+.feature-img img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    filter: grayscale(50%);
+    transition: var(--transition);
+}
+
+.feature-card:hover .feature-img img {
+    filter: grayscale(0%);
+    scale: 1.05;
+}
+
+.feature-info {
+    padding: 30px;
+}
+
+.feature-info h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+.feature-info p {
+    color: var(--text-gray);
+    font-size: 0.95rem;
+}

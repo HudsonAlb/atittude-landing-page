@@ -1,0 +1,27 @@
+.news-wall {
+    background-color: var(--primary-color);
+    padding: 15px 0;
+    position: relative;
+    z-index: 10;
+    color: var(--bg-dark);
+    /* Contrast with yellow */
+}
+
+.news-container {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.news-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-weight: 700;
+}
+
+.news-item i {
+    font-size: 1.2rem;
+}
