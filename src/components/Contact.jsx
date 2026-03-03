@@ -51,7 +51,7 @@ const Contact = () => {
                             </div>
                         </div>
                         <div className="social-links">
-                            <a href="#"><i className="fab fa-instagram"></i></a>
+                            <a href="https://www.instagram.com/attitude_academia/"><i className="fab fa-instagram"></i></a>
                             <a href="#"><i className="fab fa-facebook-f"></i></a>
                             <a href="#"><i className="fab fa-youtube"></i></a>
                         </div>
