@@ -19,7 +19,7 @@ const Header = () => {
         <header className={isScrolled ? 'scrolled' : ''}>
             <div className="container nav-wrapper">
                 <div className="logo">
-                    <a href="#">ATIT<span>TUDE</span></a>
+                    <a href="#">ATTI<span>TUDE</span></a>
                 </div>
                 <nav id="nav-menu" className={isMenuOpen ? 'active' : ''}>
                     <ul>
