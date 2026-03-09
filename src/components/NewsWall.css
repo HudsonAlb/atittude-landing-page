@@ -1,10 +1,10 @@
 .news-wall {
     background-color: var(--primary-color);
-    padding: 15px 0;
+    padding: 10px 0;
     position: relative;
-    z-index: 10;
+    z-index: 1001;
+    /* Ensure it stays above everything */
     color: var(--bg-dark);
-    /* Contrast with yellow */
 }
 
 .news-container {

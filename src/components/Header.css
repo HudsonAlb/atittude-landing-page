@@ -4,7 +4,8 @@ header {
     display: flex;
     align-items: center;
     position: fixed;
-    top: 0;
+    top: 50px;
+    /* Account for NewsWall height */
     width: 100%;
     z-index: 1000;
     transition: var(--transition);
@@ -14,6 +15,8 @@ header.scrolled {
     padding: 10px 0;
     background-color: rgba(10, 10, 10, 0.98);
     height: 70px;
+    top: 0;
+    /* Pin to top when scrolling */
 }
 
 .nav-wrapper {

@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import './Plans.css';
 
-const Plans = () => {
+const Plans = ({ onSelectPlan }) => {
     const plansList = [
         {
             name: 'BASIC',
@@ -70,7 +70,12 @@ const Plans = () => {
                                     </li>
                                 ))}
                             </ul>
-                            <a href="#" className={`btn ${plan.featured ? 'btn-primary' : 'btn-outline'}`}>Escolher</a>
+                            <button
+                                onClick={() => onSelectPlan(plan.name)}
+                                className={`btn ${plan.featured ? 'btn-primary' : 'btn-outline'}`}
+                            >
+                                Escolher
+                            </button>
                         </motion.div>
                     ))}
                 </div>

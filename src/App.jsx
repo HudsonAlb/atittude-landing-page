@@ -9,16 +9,26 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 
 function App() {
+    const [selectedPlan, setSelectedPlan] = React.useState(null);
+
+    const handleSelectPlan = (planName) => {
+        setSelectedPlan(planName);
+        const contactSection = document.getElementById('contact');
+        if (contactSection) {
+            contactSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
+
     return (
         <div className="App">
+            <NewsWall />
             <Header />
             <main>
                 <Hero />
-                <NewsWall />
                 <Features />
-                <Plans />
+                <Plans onSelectPlan={handleSelectPlan} />
                 <Gallery />
-                <Contact />
+                <Contact selectedPlan={selectedPlan} />
             </main>
             <Footer />
         </div>
