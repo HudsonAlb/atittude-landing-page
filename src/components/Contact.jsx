@@ -101,9 +101,9 @@ const Contact = ({ selectedPlan }) => {
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6 }}
                     viewport={{ once: true }}
-                    className="bg-zinc-900 border border-zinc-800 rounded-2xl p-8 md:p-12 grid grid-cols-1 lg:grid-cols-5 gap-10"
+                    className="bg-zinc-900 border border-zinc-800 rounded-2xl p-8 md:p-12 grid grid-cols-1 lg:grid-cols-5 gap-10 lg:gap-12"
                 >
-                    {/* Coluna de info */}
+                    {/* Coluna de info — 2 das 5 colunas */}
                     <div className="lg:col-span-2 flex flex-col gap-7">
                         {infoItems.map(({ icon: Icon, label, lines }) => (
                             <div key={label} className="flex items-start gap-4">
@@ -135,10 +135,7 @@ const Contact = ({ selectedPlan }) => {
                         </div>
                     </div>
 
-                    {/* Divisor vertical (apenas desktop) */}
-                    <div className="hidden lg:block lg:col-span-0 w-px bg-zinc-800 mx-auto" />
-
-                    {/* Formulário */}
+                    {/* Formulário — 3 das 5 colunas */}
                     <form
                         onSubmit={handleSubmit}
                         className="lg:col-span-3 flex flex-col gap-4"

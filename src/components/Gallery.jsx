@@ -25,7 +25,7 @@ const Gallery = () => (
                 <div className="w-16 h-1 bg-[#ffcc00] mx-auto mt-4" />
             </motion.div>
 
-            <div className="columns-1 sm:columns-2 md:columns-3 gap-4 space-y-4">
+            <div className="columns-1 sm:columns-2 md:columns-3 gap-4">
                 {galleryItems.map((item, index) => (
                     <motion.div
                         key={index}
@@ -34,7 +34,7 @@ const Gallery = () => (
                         whileHover={{ filter: 'grayscale(0%)', scale: 1.02 }}
                         transition={{ duration: 0.5 }}
                         viewport={{ once: true }}
-                        className="group relative overflow-hidden rounded-xl break-inside-avoid cursor-pointer"
+                        className="group relative overflow-hidden rounded-xl break-inside-avoid cursor-pointer mb-4"
                     >
                         <img
                             src={item.img}
