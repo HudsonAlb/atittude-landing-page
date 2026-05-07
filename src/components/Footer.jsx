@@ -1,17 +1,20 @@
 import React from 'react';
-import './Footer.css';
+import { Separator } from '@/components/ui/separator';
 
-const Footer = () => {
-    return (
-        <footer>
-            <div className="container">
-                <div className="footer-content">
-                    <p>&copy; {new Date().getFullYear()} Atittude Gym. Todos os direitos reservados.</p>
-                    <div className="footer-logo">ATIT<span>TUDE</span></div>
-                </div>
+const Footer = () => (
+    <footer className="bg-[#0a0a0a] py-8 px-6">
+        <div className="max-w-7xl mx-auto">
+            <Separator className="bg-zinc-800 mb-8" />
+            <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
+                <p className="text-zinc-500 text-sm">
+                    &copy; {new Date().getFullYear()} Atittude Academia. Todos os direitos reservados.
+                </p>
+                <span className="font-display text-2xl tracking-widest text-zinc-500">
+                    ATTI<span className="text-[#ffcc00]">TUDE</span>
+                </span>
             </div>
-        </footer>
-    );
-};
+        </div>
+    </footer>
+);
 
 export default Footer;
