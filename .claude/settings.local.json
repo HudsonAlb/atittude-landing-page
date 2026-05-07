@@ -7,7 +7,15 @@
       "Bash(npx shadcn@latest add button card badge input textarea separator --yes)",
       "Bash(del Header.css Hero.css Features.css Plans.css Gallery.css Contact.css Footer.css NewsWall.css)",
       "Bash(Remove-Item \"c:\\\\Users\\\\Hudson\\\\BlackDog\\\\landing-page\\\\src\\\\components\\\\Header.css\", \"c:\\\\Users\\\\Hudson\\\\BlackDog\\\\landing-page\\\\src\\\\components\\\\Hero.css\", \"c:\\\\Users\\\\Hudson\\\\BlackDog\\\\landing-page\\\\src\\\\components\\\\Features.css\", \"c:\\\\Users\\\\Hudson\\\\BlackDog\\\\landing-page\\\\src\\\\components\\\\Plans.css\", \"c:\\\\Users\\\\Hudson\\\\BlackDog\\\\landing-page\\\\src\\\\components\\\\Gallery.css\", \"c:\\\\Users\\\\Hudson\\\\BlackDog\\\\landing-page\\\\src\\\\components\\\\Contact.css\", \"c:\\\\Users\\\\Hudson\\\\BlackDog\\\\landing-page\\\\src\\\\components\\\\Footer.css\", \"c:\\\\Users\\\\Hudson\\\\BlackDog\\\\landing-page\\\\src\\\\components\\\\NewsWall.css\" -ErrorAction SilentlyContinue)",
-      "Bash(npm run *)"
+      "Bash(npm run *)",
+      "Bash(git submodule *)",
+      "Bash(git config *)",
+      "Bash(git ls-tree *)",
+      "Bash(git rm *)",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git push *)",
+      "Bash(git remote *)"
     ]
   }
 }
