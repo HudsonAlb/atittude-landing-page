@@ -2,10 +2,10 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 const galleryItems = [
-    { img: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?q=80&w=800&auto=format&fit=crop', alt: 'Treino' },
-    { img: 'https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?q=80&w=800&auto=format&fit=crop', alt: 'Foco' },
-    { img: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=800&auto=format&fit=crop', alt: 'Suor' },
-    { img: 'https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=800&auto=format&fit=crop', alt: 'Meta' },
+    { img: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?q=80&w=800&auto=format&fit=crop', alt: 'Treino'    },
+    { img: 'https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?q=80&w=800&auto=format&fit=crop', alt: 'Foco'      },
+    { img: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=800&auto=format&fit=crop', alt: 'Suor'      },
+    { img: 'https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=800&auto=format&fit=crop', alt: 'Meta'      },
     { img: 'https://images.unsplash.com/photo-1594381898411-846e7d193883?q=80&w=800&auto=format&fit=crop', alt: 'Superação' },
     { img: 'https://images.unsplash.com/photo-1506521781263-d8422e82f27a?q=80&w=800&auto=format&fit=crop', alt: 'Resultado' },
 ];
@@ -25,22 +25,20 @@ const Gallery = () => (
                 <div className="w-16 h-1 bg-[#ffcc00] mx-auto mt-4" />
             </motion.div>
 
-            <div className="columns-1 sm:columns-2 md:columns-3 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
                 {galleryItems.map((item, index) => (
                     <motion.div
                         key={index}
                         initial={{ opacity: 0, filter: 'grayscale(100%)' }}
-                        whileInView={{ opacity: 1, filter: 'grayscale(60%)' }}
-                        whileHover={{ filter: 'grayscale(0%)', scale: 1.02 }}
+                        whileInView={{ opacity: 1, filter: 'grayscale(50%)' }}
+                        whileHover={{ filter: 'grayscale(0%)' }}
                         transition={{ duration: 0.5 }}
                         viewport={{ once: true }}
-                        className="group relative overflow-hidden rounded-xl break-inside-avoid cursor-pointer mb-4"
+                        className="group relative overflow-hidden rounded-xl cursor-pointer h-[300px]"
                     >
-                        <img
-                            src={item.img}
-                            alt={item.alt}
-                            loading="lazy"
-                            className="w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                        <div
+                            className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
+                            style={{ backgroundImage: `url(${item.img})` }}
                         />
                         <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-all duration-300 flex items-center justify-center">
                             <span className="text-white font-display text-2xl tracking-widest opacity-0 group-hover:opacity-100 transition-opacity duration-300">
